@@ -44,16 +44,16 @@ function Navbar() {
 
   const navItems = (
     <>
-      <li>
+      <li className=" hover:underline hover:text-yellow-300">
         <a href="/">Home</a>
       </li>
-      <li>
-        <a href="/course">Course</a>
+      <li className=" hover:underline hover:text-yellow-300">
+        <a href="/course">Books</a>
       </li>
-      <li>
+      <li className=" hover:underline hover:text-yellow-300">
         <a>Contact</a>
       </li>
-      <li>
+      <li className=" hover:underline hover:text-yellow-300">
         <a>About</a>
       </li>
     </>
@@ -64,7 +64,7 @@ function Navbar() {
         className={`max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 right-0 left-0 z-50 dark:bg-slate-900 dark:text-white bg-white text-black
          ${
            sticky
-             ? " sticky-navbar shadow-md bg-base-200 duration-300 transition-all ease-in-out dark:bg-yellow-400 dark:text-white"
+             ? " sticky-navbar shadow-md bg-base-200 duration-300 transition-all ease-in-out dark:bg-slate-500 dark:text-white"
              : ""
          }`}
       >
@@ -98,13 +98,13 @@ function Navbar() {
                 {navItems}
               </ul>
             </div>
-            <a className=" md:text-2xl text-lg font-bold cursor-pointer">
-              Book <span className=" text-pink-500">Store</span>
+            <a className=" md:text-3xl text-lg font-bold cursor-pointer hover:underline">
+              Book <span className=" text-pink-500 dark:text-[#ddf650]">Store</span>
             </a>
           </div>
           <div className="navbar-end space-x-3">
             <div className="navbar-center hidden lg:flex">
-              <ul className="menu menu-horizontal px-1">{navItems}</ul>
+              <ul className="menu menu-horizontal px-1 text-sm">{navItems}</ul>
             </div>
 
             {/*🔍 Search Bar */}
@@ -113,7 +113,7 @@ function Navbar() {
                 <input
                   type="text"
                   className={`grow outline-none bg-white dark:bg-slate-900 px-1 py-1 ${
-                    sticky ? "dark:bg-[#3a424e] " : ""
+                    sticky ? "dark:bg-slate-500 " : ""
                   }`}
                   placeholder="Search"
                 />

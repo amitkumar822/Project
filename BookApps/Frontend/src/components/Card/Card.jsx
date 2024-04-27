@@ -5,16 +5,17 @@ function Card({item}) {
   return ( 
     <>
       <div className=" mt-10 p-3">
-        <div className="card bg-base-100 shadow-xl hover:scale-105 duration-300 dark:bg-slate-900 dark:text-white dark:border dark:border-[yellow]  border border-[black] bg-white">
+        <div className="card shadow-xl hover:scale-105 duration-300 dark:bg-slate-900 dark:text-white dark:border dark:border-[yellow]  border border-[black] bg-white">
           <figure>
             <img
+             className=" h-[309px] w-[309px]"
               src={item.image}
             //   alt="Shoes"
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">
-              {item.name}
+            <h2 className="card-title flex justify-between">
+              <div className=" text-lg text-blue-600 dark:text-blue-500">{item.name}</div>
               <div className="badge badge-secondary">{item.category}</div>
             </h2>
             <p>{item.title}</p>
