@@ -35,7 +35,7 @@ function App() {
       localStorage.setItem("theme", "light");
       document.body.classList.remove("dark");
     }
-  }, [themeMode]);
+  });
   return (
     <>
       <ThemeProvider value={{ themeMode, lightTheme, darkTheme }}>

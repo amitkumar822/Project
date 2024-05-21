@@ -146,7 +146,7 @@ function Header() {
       <header className="p-[15px] shadow-xl text-[#686b78] sticky top-0 z-[9999999] bg-white dark:bg-slate-800 dark:text-white dark:shadow-sm dark:shadow-[#b1d2eb]">
         <div className="max-w-[1300px] mx-auto flex items-center">
           <div className="md:w-[70px] w-[50px]">
-            <img src="./image/logo.png" alt="logo" />
+            <img src="https://1000logos.net/wp-content/uploads/2021/05/Swiggy-emblem.png" alt="" />
           </div>
           <div className=" cursor-pointer text-[12px] md:text-[17px]">
             <span className="font-bold border-b-[2px] border-[black] dark:hover:text-[#fc8019] hover:border-b-[#fc8019] hover:text-[#fc8019]  text-[14px] md:text-[17px] ">
